@@ -51,9 +51,8 @@ public class MainView {
         GridBagConstraints c = new GridBagConstraints();
 
 
-
         gameField = new GameField(this);
-        gameField.setPreferredSize(new Dimension(screenWidth/3, screenHeight/3));
+        gameField.setPreferredSize(new Dimension(screenWidth / 3, screenHeight / 3));
         gameField.setBorder(BorderFactory.createLineBorder(Color.black));
 
         gameFieldPanel = new JPanel();
@@ -77,13 +76,13 @@ public class MainView {
         c.gridy = 0;
         mainPanel.add(gameFieldPanel, c);
 
-        addLinesButton = new JButton("Draw Lines");
-        c.fill = GridBagConstraints.HORIZONTAL;
-//        c.gridwidth = 3;
-        c.gridx = 0;
-        c.gridy = 1;
-        mainPanel.add(addLinesButton, c);
-
+//        addLinesButton = new JButton("Draw Lines");
+//        c.fill = GridBagConstraints.HORIZONTAL;
+////        c.gridwidth = 3;
+//        c.gridx = 0;
+//        c.gridy = 1;
+//        mainPanel.add(addLinesButton, c);
+//
         frame.add(mainPanel);
     }
 

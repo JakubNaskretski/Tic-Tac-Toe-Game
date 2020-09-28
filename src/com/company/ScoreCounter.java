@@ -65,6 +65,7 @@ public class ScoreCounter {
                 System.out.println("X");
             if (ifWonX() == true){
                 System.out.println("Player X won!");
+                return 1;
             } else if (ifWonX() == false){
             whosMove = 2;
             return 1;}}
@@ -74,6 +75,7 @@ public class ScoreCounter {
                 System.out.println("Y");
                 if (ifWonY() == true) {
                     System.out.println("Player Y won!");
+                    return 2;
                 } else if (ifWonY() == false) {
                     whosMove = 1;
                 return 2;}}
