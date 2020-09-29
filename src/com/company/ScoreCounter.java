@@ -64,6 +64,7 @@ public class ScoreCounter {
                 score[yPoint][xPoint] = 1;
                 System.out.println("X");
             if (ifWonX() == true){
+                new winPopUpView("X");
                 System.out.println("Player X won!");
                 return 1;
             } else if (ifWonX() == false){
@@ -72,9 +73,10 @@ public class ScoreCounter {
         } else if (whosMove == 2) {
             if (score[yPoint][xPoint] == 0) {
                 score[yPoint][xPoint] = 5;
-                System.out.println("Y");
+                System.out.println("O");
                 if (ifWonY() == true) {
-                    System.out.println("Player Y won!");
+                    new winPopUpView("O");
+                    System.out.println("Player O won!");
                     return 2;
                 } else if (ifWonY() == false) {
                     whosMove = 1;

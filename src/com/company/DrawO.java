@@ -25,7 +25,7 @@ public class DrawO extends JComponent {
     private final LinkedList<MarkO> markOList = new LinkedList<MarkO>();
 
     public void addMarkO(int x1, int y1, int x2, int y2) {
-        addMarkO(x1, y1, x2, y2, Color.BLUE);
+        addMarkO(x1, y1, x2, y2, Color.CYAN);
     }
 
     public void addMarkO(int x1, int y1, int x2, int y2, Color color) {
@@ -40,8 +40,9 @@ public class DrawO extends JComponent {
         for (MarkO markO : markOList) {
 //            TODO: Make changable color
             g2.setColor(markO.color);
-            g2.setStroke(new BasicStroke(10));
-            g2.drawOval(markO.x1, markO.y1, markO.x2, markO.y2);
+//            g2.setStroke(new BasicStroke(10));
+            g2.setStroke((new BasicStroke(15.5f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND)));
+            g2.drawOval((markO.x1+(markO.x2/4)), (markO.y1+(markO.y2/4)), (markO.x2/2), (markO.y2/2));
         }
     }
 

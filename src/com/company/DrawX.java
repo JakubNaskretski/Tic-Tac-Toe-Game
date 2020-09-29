@@ -40,7 +40,9 @@ public class DrawX extends JComponent {
         for (MarkX markX : markXList) {
 //            TODO: Make changable color
             g2.setColor(markX.color);
-            g2.setStroke(new BasicStroke(10));
+//            g2.setStroke(new BasicStroke(10));
+            g2.setStroke((new BasicStroke(15.5f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND)));
+//            g2.drawLine(markX.x1, markX.y1, markX.x2, markX.y2);
             g2.drawLine(markX.x1, markX.y1, markX.x2, markX.y2);
         }
     }
