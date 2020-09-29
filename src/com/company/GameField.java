@@ -146,7 +146,7 @@ public class GameField extends JComponent implements MouseListener {
                 System.out.println("X "+pointsList[yPoint][xPoint][0]);
                 System.out.println("Y "+pointsList[yPoint][xPoint][1]);
                 mainView.getDrawX().addMarkX(pointsList[yPoint][xPoint][0], pointsList[yPoint][xPoint][1], pointsList[yPoint+1][xPoint+1][0], pointsList[yPoint+1][xPoint+1][1]);
-                mainView.getDrawX().addMarkX(pointsList[yPoint+1][xPoint][0], pointsList[yPoint+1][xPoint][1], pointsList[yPoint][xPoint+1][0], pointsList[yPoint][xPoint+1][1]);
+//                mainView.getDrawX().addMarkX(pointsList[yPoint+1][xPoint][0], pointsList[yPoint+1][xPoint][1], pointsList[yPoint][xPoint+1][0], pointsList[yPoint][xPoint+1][1]);
             }
         } else if (scoreCounter.getWhosMove() == 2){
 //            ruch Y

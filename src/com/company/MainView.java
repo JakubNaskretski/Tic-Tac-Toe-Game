@@ -52,7 +52,7 @@ public class MainView {
 
 
         gameField = new GameField(this);
-        gameField.setPreferredSize(new Dimension(screenWidth / 3, screenHeight / 3));
+        gameField.setPreferredSize(new Dimension(screenWidth / 3, screenHeight / 2));
         gameField.setBorder(BorderFactory.createLineBorder(Color.black));
 
         gameFieldPanel = new JPanel();

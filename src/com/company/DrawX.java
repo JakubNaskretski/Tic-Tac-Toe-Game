@@ -43,7 +43,9 @@ public class DrawX extends JComponent {
 //            g2.setStroke(new BasicStroke(10));
             g2.setStroke((new BasicStroke(15.5f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND)));
 //            g2.drawLine(markX.x1, markX.y1, markX.x2, markX.y2);
-            g2.drawLine(markX.x1, markX.y1, markX.x2, markX.y2);
+            g2.drawLine((int)(markX.x1+25), (int)(markX.y1+25), markX.x2-25, markX.y2-25);
+
+            g2.drawLine((int)(markX.x1+25), (int)(markX.y2-25), markX.x2-25, markX.y1+25);
         }
     }
 
